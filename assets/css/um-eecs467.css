@@ -1,0 +1,9 @@
+img.staff {
+    margin-left: 20%;
+    max-width: 30%;
+}
+
+table.staff td, table.staff{
+    border: 0;
+    background-color: white;
+}
