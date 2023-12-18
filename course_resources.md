@@ -8,7 +8,7 @@ title: Course Resources
 
 ## Google Drive
 
-The shared Google Drive for this course is the primary repository for course info, schedule, lab documents, lecture notes, tutorials & reference materials.  You should bookmark this link and check it regularly.
+The shared [Google Drive](https://drive.google.com/drive/folders/1pTWW8ZfPWWsQJHCTcGMAPktbk0WN85Yf?usp=drive_link) for this course is the primary repository for course info, schedule, lab documents, lecture notes, tutorials & reference materials.  You should bookmark this link and check it regularly.
 <iframe src="https://drive.google.com/embeddedfolderview?id=1pTWW8ZfPWWsQJHCTcGMAPktbk0WN85Yf#grid" style="width:100%; height:600px; border:0;"></iframe>
 
 We will use mainly [Slack](um-engin-467arf23.slack.com) to discuss project/lab/homework related issues. Enrolled students should receive an invite. If you are not able to join slack, please reach out to Jorge (GSI).

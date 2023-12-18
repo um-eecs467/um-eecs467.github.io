@@ -7,3 +7,8 @@ table.staff td, table.staff{
     border: 0;
     background-color: white;
 }
+
+img.lab {
+    margin: auto;
+    border-radius: 0;
+}
