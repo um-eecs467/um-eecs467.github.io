@@ -13,4 +13,4 @@ The shared [Google Drive](https://drive.google.com/drive/folders/1pTWW8ZfPWWsQJH
 
 We will use mainly [Slack](um-engin-467arf23.slack.com) to discuss project/lab/homework related issues. Enrolled students should receive an invite. If you are not able to join slack, please reach out to Jorge (GSI).
 
-The GitLab site template code repositories for EECS 467 are available [HERE](https://gitlab.eecs.umich.edu/eecs467-fa23/). We may also provide links to additional github/gitlab/google drive as supplemental instructions/resources.
+The GitLab site template code repositories for EECS 467 are available [HERE](https://gitlab.eecs.umich.edu/eecs467-fa23/) (U-M Access). We may also provide links to additional github/gitlab/google drive as supplemental instructions/resources.
