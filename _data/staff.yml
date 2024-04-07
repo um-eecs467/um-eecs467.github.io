@@ -7,14 +7,8 @@ Instructor:
     website: https://xiaoxiaodu.net
     image: /assets/img/xiaoxiao.webp
 Graduate Student Instructor:
-  - name: xiaoxiao du
-    email: xiaodu@umich.edu
-    location: 3257 fmcrb
-    office_hour: tbd
-    website: https://xiaoxiaodu.net
-    image: /assets/img/xiaoxiao.webp
   - name: Jorge Vilchis
     email: jvilchis@umich.edu
-    image: /assets/img/xiaoxiao.webp
+    image: /assets/img/jorge.png
 
 ...
