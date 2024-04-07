@@ -5,19 +5,20 @@ title: Home
 
 # Welcome to EECS467!
 This webpage contains information for EECS 467: Autonomous Robots course at the University of Michigan.
-This course discusses software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensors, sensor processing, control, motion planning, localization and mapping, forward and inverse kinematics, computer vision and artificial intelligence methods. The course contains multiple team projects, culminating in a major design experience (MDE) project.
+This course discusses software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensors, sensor processing, control, motion planning, localization and mapping, forward and inverse kinematics, computer vision and artificial intelligence methods. The course contains multiple team projects, culminating in a major design experience (MDE) project.  [EECS Course Bulletin](https://bulletin.engin.umich.edu/courses/eecs/).
 
-***Prerequisites: EECS 281 and (MATH 214 or 217 or 296 or 417 or 419 or ROB 101) and (EECS 367 or 373); (C or better, No OP/F) or instructor permission.***  [EECS Course Bulletin](https://bulletin.engin.umich.edu/courses/eecs/).
+***Prerequisites: EECS 281 and (MATH 214 or 217 or 296 or 417 or 419 or ROB 101) and (EECS 367 or 373); (C or better, No OP/F) or instructor permission.*** 
 
 
+# Course Final Project Showcase:
+Please see [Final Project page](https://um-eecs467.github.io//projects/) for project videos from previous semesters.
 
-# Lectures:
+# FA 2023 Lectures:
 Lecture will be held Mon./Wed. at 9a-10:30a at 104 EWRE
 
 Also live streamed on [ZOOM](https://umich.zoom.us/j/91407802657?pwd=NVVNUk91Y0R5MDlpQUk4S1I2SWRndz09Links).
 
 Meeting ID: **914 0780 2657**
-
 Passcode: **516966**
 
 Recordings of the Lectures can be viewed [HERE](https://leccap.engin.umich.edu/leccap/site/h9nsbemo6753uaqzmz7Links). (U-M Access)
