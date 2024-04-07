@@ -26,6 +26,28 @@
     people: Ben Akason, Donovan Below, Nikitha M. V., Theo Cruz
     iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/I1Dj0FER_YI?si=NOSneNBS34gRKMC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+- term: WN 2023
+  projects:
+  - group_num: 1
+    name: 'FotonFlow: A clustered warehouse robot control system'
+    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 2 
+    name: 'FotonFlow: A clustered warehouse robot control system'
+    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- term: FA 2022
+  projects:
+  - group_num: 1
+    name: 'FotonFlow: A clustered warehouse robot control system'
+    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 2 
+    name: 'FotonFlow: A clustered warehouse robot control system'
+    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 - term: WN 2022
   projects:
   - group_num: 1
@@ -36,4 +58,6 @@
     name: 'FotonFlow: A clustered warehouse robot control system'
     people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
     iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ...
