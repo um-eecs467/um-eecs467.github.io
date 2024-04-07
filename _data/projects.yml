@@ -56,13 +56,29 @@
 - term: FA 2022
   projects:
   - group_num: 1
-    name: 'FotonFlow: A clustered warehouse robot control system'
-    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    name: 'Chuck the Construction Cleanup Bot'
+    people: Hanna Chapin, Himaja Motheram, Vincent Nguyen, Leyang Wen
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/AU5vXt7fft4?si=dIxmBfzbkiQm4XAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   - group_num: 2 
-    name: 'FotonFlow: A clustered warehouse robot control system'
-    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    name: 'Semantic Graph-Based Indoor Place Recognition for Visual SLAM'
+    people: Zixuan Lin, Hao Chen, Yang Fei, Jiaqi Wu
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/nynq1mkBhoo?si=bhzcTGIrZ6bJA7Xj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 3
+    name: 'Visually Interactive Vlog Autosystem'
+    people: Hanxi Wan, Jiyue Zhu, Binhao Qin, Che Chen
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/gSCSo6WMXTU?si=fdLNS5xAhd_kylsO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 4 
+    name: 'Smart Basketball Bot'
+    people: Ian Iong Lam, Yechen Shi, Jiayao Su, Gongwei Chen
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/i4kxadWebWs?si=wGzJBc3qbCn_eM-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 5
+    name: 'Search And Rescue Autonomous System'
+    people: Andrew Scheffer, Joshua Symonds, Kathryn Wakevainen, Tianle Wu
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/TE6OR8h_Fe4?si=5cbVp7pnR1z8h0Zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 6 
+    name: 'MDOG'
+    people: Chetan Reddy, Bradin Zaba, Ashutosh Bhown, Hassan Kadiri
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/FtKYTwHnwmA?si=JQ6H2vFfAHYRiofE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - term: WN 2022
   projects:
