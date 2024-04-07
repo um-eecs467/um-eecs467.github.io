@@ -4,11 +4,28 @@
   - group_num: 1
     name: 'FotonFlow: A clustered warehouse robot control system'
     people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/uRaZzDGZg-c?si=pNh7eIdZwB-g71Ax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   - group_num: 2 
-    name: 'FotonFlow: A clustered warehouse robot control system'
-    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    name: 'Hold on Tight for Deer Life: Lane Alignment with Obscured Detections'
+    people: Daniel Jiang, Yufeiyang Gao, Nicholas Maggi, Haoran Zhang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/qbmGqVQYHPY?si=ELMvaM6MUmie0Hkj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 3 
+    name: 'TidyBot with LLM'
+    people: Danli Shi, Sikai Li, Yiting Lai, Yilin Jia
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/WUoGAq8qnss?si=NXlJ5j_w9Pt4n5UN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 4 
+    name: 'Warehouse GPT'
+    people: Hyunsoo Jang, Nolan Kuza, Blake Leiber, Dalton Richardson
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/fsK3izfjZXY?si=dvK9zxH4_THLq5EP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 5 
+    name: 'TenniSweep'
+    people: Jon Bear, Brian Ding, Kartikeya Gupta, Connor Truax, and Tahseen Younus
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/rRynkPOfDBU?si=CdlkFznt_TbdY14C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 6
+    name: 'Text and Drive Bot'
+    people: Ben Akason, Donovan Below, Nikitha M. V., Theo Cruz
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/I1Dj0FER_YI?si=NOSneNBS34gRKMC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 - term: WN 2022
   projects:
   - group_num: 1
