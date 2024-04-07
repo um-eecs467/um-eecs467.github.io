@@ -29,13 +29,29 @@
 - term: WN 2023
   projects:
   - group_num: 1
-    name: 'FotonFlow: A clustered warehouse robot control system'
-    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    name: 'Delivery Drone'
+    people: Santiago Perez, Parth Raut
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/FQ_IPlBUoek?si=rdcwMzUPgclwdXSh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   - group_num: 2 
-    name: 'FotonFlow: A clustered warehouse robot control system'
-    people: Yi Liang, Xinyu Bao, Shuyu Zhan, Tianshu Huang
-    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/cgNVCGykmrE?si=Eo0ObeFQlJinIZMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    name: 'Rescue Bot'
+    people: Eli Gooding, Isaac Tong, Justin Ng, Jubilee Wang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/o_3V-VYPqM8?si=r7jBV8fY1fSRjfmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ - group_num: 3
+    name: 'Simultaneous Localization and Object Sorting (SLOS)'
+    people: Ashwin Gupta, Riley Bridges, Haoliang Cheng, Ian Fischer
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/ukJhDQVrVeU?si=pkD7xC6KnkuG7Y2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 4 
+    name: 'Multi-agent Path Planning and Collision Avoidance'
+    people: Luyang Hu, Yuchen Wu, Emilia Psacharopoulos, Heyang Zhang
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/ztpxrWfy5_4?si=JjiWdD37at8XE3I1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ - group_num: 5
+    name: 'Autonomous Waiter'
+    people: Matthew Arteaga, Yiannos Demetriou, Diego Tejada, Tyler Burdick
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_4k5V_dJkk?si=mnJdgl4cSK3KJcl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  - group_num: 6 
+    name: 'Terrain Bot'
+    people: Ian Birley, Greg Krzyston, Eva Mason, Hrithik Ravi
+    iframe: <iframe width="560" height="315" src="https://www.youtube.com/embed/Q-zUQsJG7hY?si=jYJbYtq9sKYWnxFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - term: FA 2022
   projects:
