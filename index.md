@@ -74,12 +74,13 @@ Labs will be at EECS 3007, Fridays 12:00PM-2:00PM
 
 
 # MBot Distribution:
-MBot robot kits will be available for distribution (either at EECS 3007 or at the Ford Robotics building).
+For FA23 semester, MBot robot kits will be available for distribution at EECS 3007 or at the Ford Robotics building.
+We have a new [MBOT website](https://mbot.robotics.umich.edu/), check it out!
 
 
 
-# Suggested References
-- Thrun, Sebastian, W. Burgard, D. Fox. Probabilistic Robotics
-- Lynch & Park, Modern Robotics: Mechanics, Planning, and Control
-- Spong, Mark W., S. Hutchinson, and M. Vidyasagar. Robot Modeling and Control
-- Murray, Richard M., Zexiang Li, and S. Shankar Sastry. A mathematical introduction to robotic manipulation
+# References
+- Thrun, Sebastian, W. Burgard, D. Fox. [Probabilistic Robotics](http://www.probabilistic-robotics.org/)
+- Lynch & Park, [Modern Robotics: Mechanics, Planning, and Control](https://hades.mech.northwestern.edu/index.php/Modern_Robotics)
+- Spong, Mark W., S. Hutchinson, and M. Vidyasagar. [Robot Modeling and Control](https://www.wiley.com/en-us/Robot+Modeling+and+Control%2C+2nd+Edition-p-9781119524045)
+- Murray, Richard M., Zexiang Li, and S. Shankar Sastry. [A Mathematical Introduction to Robotic Manipulation](https://www.taylorfrancis.com/books/mono/10.1201/9781315136370/mathematical-introduction-robotic-manipulation-richard-murray-zexiang-li-shankar-sastry)
