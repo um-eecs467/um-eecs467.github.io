@@ -1,11 +1,10 @@
 ---
-name: Kevin Lin
+name: Xiaoxiao Du
 role: Instructor
-email: me@example.com
-website: https://kevinl.info
-photo: kevin.jpg
+email: xiaodu [at] umich.edu
+website: https://robotics.umich.edu
+photo: xiaoxiao.webp
 meta:
-  Office Hours: Somewhere on the internet
+  Office Hours: TBD
 ---
 
-[Schedule an appointment](#){: .btn .btn-outline }
