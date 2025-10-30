@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 'EECS 467: Autonomous Robotics Design Experience'
-tagline: 'WN 2026'
-description: EECS 467 course websites
+title: 'EECS 467'
+tagline: 'EECS 467 Autonomous Robotics Design Experience'
+description: Software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensors, sensor processing, control, motion planning, localization and mapping, and forward and inverse kinematics. Multiple team projects, culminating in a major design experience (MDE) project.
 author: Xiaoxiao Du
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://um-eecs467.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
