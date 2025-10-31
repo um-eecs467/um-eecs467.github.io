@@ -1,21 +1,28 @@
 ---
 layout: home
-title: Just the Class
+title: 'EECS 467: Autonomous Robotics Design Experience'
 nav_exclude: true
 permalink: /:path/
 seo:
   type: Course
-  name: Just the Class
+  name: 'EECS 467: Autonomous Robotics Design Experience'
 ---
 
-# Just the Class
+# EECS 467: Autonomous Robotics Design Experience
 
-Just the Class is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
+Software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensors, sensor processing, control, motion planning, localization and mapping, and forward and inverse kinematics. Multiple team projects, culminating in a major design experience (MDE) project.  [EECS Course Bulletin](https://bulletin.engin.umich.edu/courses/eecs/).
+
+***Prerequisites: EECS 281 and (MATH 214 or 217 or 296 or 417 or 419 or ROB 101) and (EECS 367 or 373); (C or better, No OP/F) or instructor permission.*** 
+
+This is the course website for Winter 2026 semester at the [University of Michigan](https://umich.edu). 
 
 - [announcements](announcements.md),
 - a [course calendar](calendar.md),
 - a [staff](staff.md) page,
 - and a weekly [schedule](schedule.md).
+
+# Course Final Project Showcase:
+Please see [Final Project page](https://um-eecs467.github.io//projects/) for project videos from previous semesters.
 
 Just the Class is a template that extends the popular [Just the Docs](https://github.com/just-the-docs/just-the-docs) theme, which provides a robust and thoroughly-tested foundation for your website. Just the Docs include features such as:
 
