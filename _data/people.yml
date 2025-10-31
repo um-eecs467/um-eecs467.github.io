@@ -1,9 +1,7 @@
 instructors:
-  - name: Albus Dumbledore
-    profile_pic: /_images/pp/dumbledore.jpg
-    webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-  - name: Minerva McGonagall
-    profile_pic: /_images/pp/mcgonagall.jpg
+  - name: Xiaoxiao Du
+    profile_pic: /_images/pp/xiaoxiao.webp
+    webpage: https://xiaoxiaodu.net
 
 teaching_assistants:
   - name: Harry Potter
