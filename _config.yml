@@ -1,76 +1,50 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: 'EECS 467: Autonomous Robotics'
-tagline: 'EECS 467 Autonomous Robotics Design Experience'
-description: EECS 467 course website
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://um-eecs467.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
+course_name: "EECS 467: Autonomous Robotics Design Experience"
+course_description: "Software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensors, sensor processing, control, motion planning, localization and mapping, and forward and inverse kinematics. Multiple team projects, culminating in a major design experience (MDE) project."
+course_semester: "Winter 2026"
 
-# Theme settings
-remote_theme: just-the-docs/just-the-docs@v0.10.1
-color_scheme: light
-search_enabled: true
-heading_anchors: true
-permalink: pretty
-aux_links:
-  Just the Class on GitHub:
-    - 'https://github.com/kevinlin1/just-the-class'
-footer_content:
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://um-eecs467.github.io/" # the base hostname & protocol for your site
 
-# Collections for website data
+schoolname: "UM"
+schoolurl: "https://umich.edu"
+twitter_username:  
+
+address: |
+    University of Michigan, Ann Arbor
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%m/%d/%Y"
+
+future: true
 collections:
-  staffers:
-  modules:
-  schedules:
-  announcements:
-# Default layouts for each collection type
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
 defaults:
   - scope:
-      path: ''
-      type: staffers
+      path: ""
+      type: "assignments"
     values:
-      layout: staffer
-      height: 300
-      subpath: '/assets/images/'
-      width: 300
-  - scope:
-      path: ''
-      type: modules
-    values:
-      layout: module
-  - scope:
-      path: ''
-      type: schedules
-    values:
-      layout: schedule
-  - scope:
-      path: ''
-      type: announcements
-    values:
-      layout: announcement
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-
-liquid:
-  error_mode: strict
-  strict_filters: true
+      layout: "assignment"
