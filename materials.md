@@ -11,7 +11,7 @@ permalink: /materials/
 * Thrun, S., Burgard, W., & Fox, D. (2005). [Probabilistic Robotics](https://robots.stanford.edu/probabilistic-robotics/). MIT Press.
 * Lynch, K. M., & Park, F. C. (2017). [Modern Robotics: Mechanics, Planning, and Control](https://dl.acm.org/doi/book/10.5555/3165183). Cambridge Univeristy Press.
 * Spong, Mark W., S. Hutchinson, and M. Vidyasagar. (2020). [Robot Modeling and Control](https://www.wiley.com/en-us/Robot+Modeling+and+Control%2C+2nd+Edition-p-9781119524045). John Wiley & Sons.
-* Murray, Richard M., Zexiang Li, and S. Shankar Sastry. (1994). A mathematical introduction to robotic manipulation. CRC Press.
+* Murray, Richard M., Zexiang Li, and S. Shankar Sastry. (1994). [A mathematical introduction to robotic manipulation](https://www.cds.caltech.edu/~murray/mlswiki/index.php?title=Main_Page). CRC Press.
 * Nikolaus Correll, Bradley Hayes, Christoffer Heckman and Alessandro Roncone. (2022). [Introduction to Autonomous Robots: Mechanisms, Sensors, Actuators, and Algorithms](https://mitpress.mit.edu/9780262047555/introduction-to-autonomous-robots/). MIT Press.
 
 
