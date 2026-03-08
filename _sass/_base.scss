@@ -496,6 +496,114 @@ a.tosu {
     font-family: inherit;
   }
 
+/* Tables on the Home page */
+.home table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    th {
+        background: #f0f4f8;
+        font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+        background: #fafafa;
+    }
+}
+
+/* Materials page */
+.materials-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 1.2em 0 0.5em;
+
+    a.materials-card {
+        display: block;
+        border: 1px solid #dde3ea;
+        border-radius: 6px;
+        padding: 14px 16px;
+        background: #f8fafc;
+        color: inherit;
+        text-decoration: none;
+        transition: border-color 0.15s, box-shadow 0.15s;
+
+        &:hover {
+            border-color: $primary-color;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-decoration: none;
+        }
+
+        .materials-card-label {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: $primary-color;
+            margin-bottom: 3px;
+        }
+
+        .materials-card-desc {
+            font-size: 0.82em;
+            color: #666;
+        }
+    }
+}
+
+.materials-books {
+    margin: 1em 0;
+
+    .materials-book {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+
+        &:last-child { border-bottom: none; }
+
+        .materials-book-title {
+            font-weight: 600;
+        }
+
+        .materials-book-meta {
+            font-size: 0.85em;
+            color: #777;
+            margin-left: 6px;
+        }
+    }
+}
+
+.materials-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 1em 0;
+
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+        color: $title-color;
+        margin-bottom: 0.5em;
+        padding-bottom: 4px;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    ul {
+        margin-left: 1.2em;
+        li {
+            margin-bottom: 0.4em;
+            font-size: 0.95em;
+        }
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
 .markdown-content {
     p,ol {
         margin-bottom: 3px;

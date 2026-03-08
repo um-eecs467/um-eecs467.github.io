@@ -1,0 +1,52 @@
+sections:
+  - title: "Botlab"
+    url: /w26/assignments/
+    children: []
+
+  - title: "Get Started"
+    url: /w26/assignments/get-started/
+    children: []
+
+  - title: "MBot Hardware Setup"
+    url: /w26/assignments/mbot-hardware-setup-pi5/
+    children: []
+
+  - title: "MBot System Setup"
+    url: /w26/assignments/mbot-system-setup-pi5/
+    children: []
+
+  - title: "Checkpoints"
+    url: /w26/assignments/checkpoints/
+    children:
+      - title: "Checkpoint 0"
+        url: /w26/assignments/checkpoints/checkpoint0/
+      - title: "Checkpoint 1"
+        url: /w26/assignments/checkpoints/checkpoint1/
+      - title: "Checkpoint 2"
+        url: /w26/assignments/checkpoints/checkpoint2/
+      - title: "Checkpoint 3"
+        url: /w26/assignments/checkpoints/checkpoint3/
+      - title: "Checkpoint 4"
+        url: /w26/assignments/checkpoints/checkpoint4/
+      - title: "Design Lab"
+        url: /w26/assignments/checkpoints/design-lab/
+      - title: "Competition"
+        url: /w26/assignments/checkpoints/competition/
+
+  - title: "How-to Guide"
+    url: /w26/assignments/how-to-guide/
+    children:
+      - title: "slam_toolbox Guide"
+        url: /w26/assignments/how-to-guide/slam-toolbox-guide/
+      - title: "mbot_xl320_lib Guide"
+        url: /w26/assignments/how-to-guide/mbot-xl320-guide/
+      - title: "Misc"
+        url: /w26/assignments/how-to-guide/misc/
+
+  - title: "MBot Hardware Design"
+    url: /w26/assignments/mbot-hardware-design/
+    children: []
+
+  - title: "MBot Software Design"
+    url: /w26/assignments/mbot-software-library/
+    children: []
