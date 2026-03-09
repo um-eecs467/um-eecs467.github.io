@@ -1,8 +1,8 @@
 <ul class="sidenav-list">
   {% for item in site.data.nav.items %}
     {% assign is_active = false %}
-    {% if item.url == '/' %}
-      {% if page.url == '/' %}{% assign is_active = true %}{% endif %}
+    {% if item.name == 'Home' %}
+      {% if page.url == item.url or page.url == '/' %}{% assign is_active = true %}{% endif %}
     {% elsif page.url contains item.url %}
       {% assign is_active = true %}
     {% endif %}
