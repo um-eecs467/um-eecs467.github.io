@@ -1,8 +1,4 @@
 sections:
-  - title: "Botlab"
-    url: /w26/assignments/
-    children: []
-
   - title: "Get Started"
     url: /w26/assignments/get-started/
     children: []

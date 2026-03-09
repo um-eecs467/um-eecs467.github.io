@@ -17,9 +17,9 @@ Live site: [um-eecs467.github.io](https://um-eecs467.github.io)
    - [Home Page](#home-page)
    - [Schedule](#schedule)
    - [Lectures](#lectures)
-   - [Assignments (Botlab Docs)](#assignments-botlab-docs)
-   - [Project Page](#project-page)
-   - [Materials Page](#materials-page)
+   - [Botlab (Assignments Docs)](#botlab-assignments-docs)
+   - [Design Project Page](#design-project-page)
+   - [Resources Page](#resources-page)
 4. [Adding a New Semester](#adding-a-new-semester)
 5. [Styling & Theming](#styling--theming)
 
@@ -33,37 +33,39 @@ um-eecs467.github.io/
 ├── _config.yml               # Site-wide settings (course name, URL, semester)
 │
 ├── _data/
-│   ├── nav.yml               # Top navigation bar links
+│   ├── nav.yml               # Left sidebar top-level navigation links
 │   ├── people.yml            # Instructor and TA info (name, email, office hours)
 │   ├── semesters.yml         # Semester dropdown selector data
 │   ├── previous_offering.yml # Links to previous semester sites
-│   └── botlab_nav.yml        # Sidebar navigation for the Assignments/Botlab docs
+│   └── botlab_nav.yml        # Sidebar sub-navigation for Botlab docs
 │
 ├── _includes/
-│   ├── header.html           # Site header
-│   ├── nav.html              # Navigation menu (reads from _data/nav.yml)
-│   ├── head.html             # HTML <head> (meta, CSS links)
+│   ├── sidenav.html          # Left sidebar navigation (reads nav.yml + botlab_nav.yml)
+│   ├── head.html             # HTML <head> (meta, CSS links, favicon)
 │   └── footer.html           # Site footer
 │
 ├── _layouts/
-│   ├── default.html          # Base layout wrapping all pages
+│   ├── default.html          # Base layout: two-column flex (sidebar + main content)
 │   ├── home.html             # Home page layout (staff headshots, announcements)
-│   ├── docs.html             # Botlab docs layout (sidebar + content)
+│   ├── docs.html             # Botlab docs layout (page header + content; sidebar via default)
 │   ├── lectures.html         # Lectures page layout
 │   ├── schedule.html         # Schedule page layout
 │   └── assignments.html      # Assignments index layout
 │
 ├── _sass/
 │   ├── _user_vars.scss       # Color theme variables (primary/secondary colors)
-│   ├── _docs.scss            # Styles for Botlab docs layout, callouts, copy button
+│   ├── _sidenav.scss         # Left sidebar layout and nav styles
+│   ├── _docs.scss            # Styles for Botlab docs callouts, copy button
 │   ├── _syntax-highlighting.scss  # Code block syntax highlighting (GitHub Light)
-│   ├── _header.scss          # Header styles
+│   ├── _base.scss            # Base typography and element styles
+│   ├── _header.scss          # Legacy header styles (unused in current layout)
 │   └── _layout.scss          # General layout styles
 │
 ├── _css/
 │   └── main.scss             # Master CSS file — imports all partials above
 │
 ├── _images/
+│   ├── favicon.png           # Site favicon (MBot logo)
 │   └── pp/                   # Staff profile pictures (webp/svg)
 │
 ├── assets/
@@ -73,14 +75,14 @@ um-eecs467.github.io/
 ├── index.md                  # Home page content
 ├── lectures.md               # Lectures page content
 ├── assignments.md            # Legacy assignments page (not primary)
-├── materials.md              # Legacy materials page (not primary)
+├── resources.md              # Legacy resources page (not primary)
 ├── project.md                # Legacy project page (not primary)
 │
 ├── w26/                      # Winter 2026 semester content (all under /w26/ URL)
-│   ├── schedule.md           # /w26/schedule/ — weekly course schedule
+│   ├── schedule.md           # /w26/schedule/ — weekly course schedule + office hours calendar
 │   ├── lectures.md           # /w26/lectures/ — lecture links and resources
 │   ├── project.md            # /w26/project/ — design project requirements
-│   ├── materials.md          # /w26/materials/ — course resource links
+│   ├── resources.md          # /w26/resources/ — course resource links
 │   └── assignments/          # /w26/assignments/ — Botlab documentation
 │       ├── index.md          # Botlab overview page
 │       ├── get-started.md
@@ -171,7 +173,9 @@ To add a profile photo, place a `.webp` or `.jpg` file in `_images/pp/` and upda
 
 ### Navigation
 
-Edit **`_data/nav.yml`** to change top-bar links. All semester-specific pages use the `/w26/` prefix:
+The site uses a **left sidebar navigation** (documentation-style layout). The sidebar is rendered by `_includes/sidenav.html` and styled by `_sass/_sidenav.scss`.
+
+Edit **`_data/nav.yml`** to change sidebar top-level links. All semester-specific pages use the `/w26/` prefix:
 
 ```yaml
 items:
@@ -179,11 +183,19 @@ items:
     name: Schedule
     icon_class: fas fa-calendar-alt
   - url: /w26/assignments/
-    name: Assignments
+    name: Botlab
     icon_class: fas fa-tasks
+  - url: /w26/project/
+    name: Design Project
+    icon_class: fas fa-robot
+  - url: /w26/resources/
+    name: Resources
+    icon_class: fas fa-book
 ```
 
-The semester dropdown in the nav is driven by **`_data/semesters.yml`**:
+When the current page URL contains `/assignments/`, the sidebar automatically expands the **Botlab sub-navigation** (driven by `_data/botlab_nav.yml`).
+
+The semester switcher in the sidebar is driven by **`_data/semesters.yml`**:
 
 ```yaml
 current: w26
@@ -212,6 +224,8 @@ Key sections to update each semester:
 
 Edit **`w26/schedule.md`**. The schedule is a hand-authored HTML table. Each row corresponds to one week.
 
+The page also embeds a **Google Calendar** showing office hours. The calendar defaults to weekly view. To update the calendar, replace the `src` URL in the `<iframe>` tag with the new calendar embed URL, keeping `&mode=WEEK` appended.
+
 **Row classes for color coding:**
 - `class="schedule-row-exam"` — light red highlight (competitions, midterms)
 - `class="schedule-row-project-due"` — light yellow highlight (checkpoint due dates)
@@ -237,7 +251,7 @@ Edit **`w26/lectures.md`**. Update the YouTube playlist URL and PrairieLearn URL
 
 ---
 
-### Assignments (Botlab Docs)
+### Botlab (Assignments Docs)
 
 All Botlab documentation lives under **`w26/assignments/`**. The content is kept in sync with the [rob550-docs](https://rob550-docs.github.io/docs/botlab/) source.
 
@@ -284,15 +298,15 @@ This is important.
 
 ---
 
-### Project Page
+### Design Project Page
 
 Edit **`w26/project.md`**. Contains design project requirements: team formation, proposal, status update, and final presentation details. Update dates and requirements each semester.
 
 ---
 
-### Materials Page
+### Resources Page
 
-Edit **`w26/materials.md`**. Contains a table of course resource links (Piazza, Google Drive, GitLab, PrairieLearn, etc.). Update URLs at the start of each semester.
+Edit **`w26/resources.md`**. Contains a table of course resource links (Piazza, Google Drive, GitLab, PrairieLearn, etc.). Update URLs at the start of each semester.
 
 ---
 
@@ -331,8 +345,18 @@ $clemson-purple:  #00274C;
 $clemson-orange:  #FFCB05;  // Michigan maize
 ```
 
+**Fonts** use the system font stack — no external font imports. The font stack is defined in `_css/main.scss`:
+```scss
+$base-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$mono-font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+```
+
+**Sidebar layout** is styled in `_sass/_sidenav.scss`. The sidebar width, colors, and hover styles are all defined there. The two-column layout (sidebar + content) is set up in `_layouts/default.html` using CSS flexbox.
+
+**Tab titles** use the format `Page Title | EECS 467` (or just `EECS 467 — Winter 2026` for the home page), configured in `_includes/head.html`.
+
+**Favicon** is located at `_images/favicon.png` (MBot logo). It is linked in `_includes/head.html`.
+
 **Code block syntax highlighting** uses a GitHub Light theme defined in `_sass/_syntax-highlighting.scss`. To change themes, replace the token color values in that file.
 
 **Callout styles** (required_for_report, warning, note, important) are in `_sass/_docs.scss`. Each uses the SCSS `callout()` mixin — adjust colors or padding there.
-
-**Docs sidebar width** can be changed in `_sass/_docs.scss` under `.docs-sidebar { width: 260px; }`.

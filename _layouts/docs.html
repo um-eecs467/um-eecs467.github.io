@@ -2,53 +2,24 @@
 layout: default
 ---
 
-<div class="docs-wrapper">
-  <nav class="docs-sidebar" id="docs-sidebar">
-    <div class="docs-sidebar-inner">
-      <div class="docs-sidebar-header">
-        <a href="{{ '/w26/assignments/' | prepend: site.baseurl }}"><i class="fas fa-tasks"></i> Botlab Docs</a>
-      </div>
-      <ul class="docs-nav">
-        {% for section in site.data.botlab_nav.sections %}
-        <li class="docs-nav-section {% if page.url contains section.url %}active{% endif %}">
-          <a href="{{ section.url | prepend: site.baseurl }}" class="docs-nav-link {% if page.url == section.url %}current{% endif %}{% if section.children and section.children.size > 0 %} has-children{% endif %}">
-            {{ section.title }}
-          </a>
-          {% if section.children and section.children.size > 0 %}
-          <ul class="docs-nav-children {% if page.url contains section.url %}open{% endif %}">
-            {% for child in section.children %}
-            <li>
-              <a href="{{ child.url | prepend: site.baseurl }}" class="docs-nav-child-link {% if page.url == child.url %}current{% endif %}">
-                {{ child.title }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+<div class="docs-page">
+  {% if page.title %}
+  <header class="docs-page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.last_modified_at %}
+    <p class="docs-last-modified">Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</p>
+    {% endif %}
+  </header>
+  {% endif %}
 
-  <main class="docs-content">
-    <div class="docs-content-inner">
-      {% if page.title %}
-      <header class="docs-page-header">
-        <h1>{{ page.title }}</h1>
-        {% if page.last_modified_at %}
-        <p class="docs-last-modified">Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</p>
-        {% endif %}
-      </header>
-      {% endif %}
-      {{ content }}
-    </div>
-  </main>
+  <div class="docs-page-content">
+    {{ content }}
+  </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".docs-content div.highlight").forEach(function (block) {
+  document.querySelectorAll(".docs-page div.highlight").forEach(function (block) {
     var btn = document.createElement("button");
     btn.className = "copy-code-btn";
     btn.setAttribute("aria-label", "Copy code");

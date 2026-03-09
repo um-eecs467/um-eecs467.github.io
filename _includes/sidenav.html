@@ -1,0 +1,80 @@
+<ul class="sidenav-list">
+  {% for item in site.data.nav.items %}
+    {% assign is_active = false %}
+    {% if item.url == '/' %}
+      {% if page.url == '/' %}{% assign is_active = true %}{% endif %}
+    {% elsif page.url contains item.url %}
+      {% assign is_active = true %}
+    {% endif %}
+
+    <li class="sidenav-item">
+      {% if item.url contains '/assignments' %}
+        <a href="{{ item.url | prepend: site.baseurl }}"
+           class="sidenav-link{% if is_active %} active-section{% endif %} has-children">
+          <i class="{{ item.icon_class }}"></i>
+          <span>{{ item.name }}</span>
+          <span class="sidenav-chevron">▶</span>
+        </a>
+        <ul class="sidenav-sub{% if is_active %} open{% endif %}">
+          {% for section in site.data.botlab_nav.sections %}
+            {% assign sec_is_current = false %}
+            {% assign sec_has_active_child = false %}
+            {% if page.url == section.url %}{% assign sec_is_current = true %}{% endif %}
+            {% if section.children.size > 0 and page.url contains section.url %}{% assign sec_has_active_child = true %}{% endif %}
+
+            <li class="sidenav-sub-item">
+              <a href="{{ section.url | prepend: site.baseurl }}"
+                 class="sidenav-sub-link{% if sec_is_current %} current{% elsif sec_has_active_child %} parent-active{% endif %}{% if section.children.size > 0 %} has-children{% endif %}">
+                {{ section.title }}
+                {% if section.children.size > 0 %}<span class="sidenav-sub-chevron">▶</span>{% endif %}
+              </a>
+              {% if section.children.size > 0 %}
+              <ul class="sidenav-sub-children{% if sec_has_active_child or sec_is_current %} open{% endif %}">
+                {% for child in section.children %}
+                <li>
+                  <a href="{{ child.url | prepend: site.baseurl }}"
+                     class="sidenav-sub-child-link{% if page.url == child.url %} current{% endif %}">
+                    {{ child.title }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <a href="{{ item.url | prepend: site.baseurl }}"
+           class="sidenav-link{% if is_active %} current{% endif %}">
+          <i class="{{ item.icon_class }}"></i>
+          <span>{{ item.name }}</span>
+        </a>
+      {% endif %}
+    </li>
+  {% endfor %}
+
+  {% if site.data.semesters %}
+  <li class="sidenav-divider-item"></li>
+  <li class="sidenav-item">
+    <details class="sidenav-semester-details">
+      <summary class="sidenav-link">
+        <i class="fas fa-calendar"></i>
+        <span>
+          {% assign current_key = site.data.semesters.current %}
+          {% for sem in site.data.semesters.semesters %}
+            {% if sem.key == current_key %}{{ sem.label }}{% endif %}
+          {% endfor %}
+        </span>
+        <span class="sidenav-chevron">▶</span>
+      </summary>
+      <ul class="sidenav-sub open">
+        {% for sem in site.data.semesters.semesters %}
+        <li>
+          <a href="{{ sem.url | prepend: site.baseurl }}" class="sidenav-sub-link">{{ sem.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  {% endif %}
+</ul>

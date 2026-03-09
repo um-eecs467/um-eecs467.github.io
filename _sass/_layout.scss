@@ -180,45 +180,25 @@
 }
 
 h1 /* .post-title */ {
-/*    font-size: 42px; */
-    letter-spacing: -1px;
-    line-height: 1;
-		font-family: 'Titillium Web', sans-serif;
-		color: $title-color;
-
-    @include media-query($on-laptop) {
-/*        font-size: 36px; */
-    }
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: $title-color;
+    font-weight: 600;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Titillium Web', sans-serif;
-	font-weight: 500;
-/*        font-size: 32px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 28px; */
-        }
+        font-weight: 600;
     }
 
     h3 {
-		font-style: italic;
-/*        font-size: 26px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 22px; */
-        }
+        font-weight: 600;
     }
 
     h4 {
-/*       font-size: 20px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 18px; */
-        }
+        font-weight: 600;
     }
 }
 
@@ -237,7 +217,7 @@ ul.listing {
 ul.listing li.listing-seperator {
 	padding-top: 15px;
 	font-weight: bold;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: $base-font-family;
 	font-size: 1.17em;
 }
 
@@ -252,7 +232,7 @@ ul.listing li.listing-item time {
 ul.listing li.listing-item a {
 	color: $clemson-purple;
 	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: $base-font-family;
 }
 
 
@@ -291,7 +271,7 @@ ul#archive li.alt {
 ul#archive li span a {
        color: $clemson-purple;
 	font-weight: bold;
-font-family: 'Titillium Web', sans-serif;
+font-family: $base-font-family;
 }
 
 
@@ -303,7 +283,7 @@ ul#archive li span.postlower {
 ul#archive li span.postlower a {
 	color: #07c;
 	font-weight: normal;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: $base-font-family;
 
 }
 

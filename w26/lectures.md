@@ -4,7 +4,7 @@ title: Lectures
 permalink: /w26/lectures/
 ---
 
-EECS 467 uses a **flipped classroom** model. Pre-recorded lectures are available on the YouTube playlist below, along with lecture review exercises on PrairieLearn that must be completed **before** each in-person session.
+EECS 467 uses a "flipped classroom" model. Pre-recorded lectures are available on the YouTube playlist below, along with lecture review exercises on PrairieLearn that must be completed **before** each in-person session.
 
 ---
 

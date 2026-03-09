@@ -9,7 +9,7 @@ permalink: /w26/schedule/
 ## Office Hours Calendar
 
 <div style="margin: 1em 0 2em;">
-  <iframe src="https://calendar.google.com/calendar/embed?src=c_a8f7804113d558a7dfb81697840c3c7707f4b5e8dcf61d64b2b853c98f19892e%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 100%; max-width: 800px; display: block;" height="600" frameborder="0" scrolling="no"></iframe>
+  <iframe src="https://calendar.google.com/calendar/embed?src=c_a8f7804113d558a7dfb81697840c3c7707f4b5e8dcf61d64b2b853c98f19892e%40group.calendar.google.com&ctz=America%2FNew_York&mode=WEEK" style="border: 0; width: 100%; display: block;" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
 ## Course Schedule

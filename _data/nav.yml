@@ -12,13 +12,13 @@ items:
   icon_class: fas fa-book-reader
 
 - url: /w26/assignments/
-  name: Assignments
+  name: Botlab
   icon_class: fas fa-tasks
 
 - url: /w26/project/
-  name: Project
+  name: Design Project
   icon_class: fas fa-robot
 
 - url: /w26/materials/
-  name: Materials
+  name: Resources
   icon_class: fas fa-book

@@ -137,7 +137,7 @@
   margin-bottom: 10px;
 
   a {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: $base-font-family;
     font-weight: 700;
     font-size: 1em;
     color: $clemson-purple;
@@ -369,7 +369,7 @@ div.highlight:hover .copy-code-btn {
 .schedule-week-header {
   background-color: #e8eef7 !important;
   font-weight: 700;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: $base-font-family;
 }
 
 /* Schedule table styling */
@@ -384,7 +384,7 @@ div.highlight:hover .copy-code-btn {
     color: #fff;
     padding: 10px 12px;
     text-align: left;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: $base-font-family;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 0.85em;
