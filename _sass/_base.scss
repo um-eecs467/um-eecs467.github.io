@@ -536,16 +536,52 @@ a.tosu {
         border: 1px solid #ddd;
         padding: 8px 12px;
         text-align: left;
+        color: #111;
     }
 
     th {
         background: #f0f4f8;
         font-weight: 600;
+        color: #111;
     }
 
     tr:nth-child(even) td {
         background: #fafafa;
     }
+}
+
+/* Schedule table row highlights */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+        vertical-align: top;
+        color: #111;
+    }
+
+    thead th {
+        background: #e8edf2;
+        font-weight: 600;
+        color: #111;
+    }
+}
+
+.post-content .schedule-table tr.schedule-week-header td {
+    background: #dce6f0;
+    font-weight: 700;
+    color: #1a1a2e;
+    border-top: 2px solid #a8bfd4;
+}
+
+.post-content .schedule-table tr.schedule-row-exam td {
+    background: #fde8e8;
+}
+
+.post-content .schedule-table tr.schedule-row-project-due td {
+    background: #fefde0;
 }
 
 /* Materials page */
