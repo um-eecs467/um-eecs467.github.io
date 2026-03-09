@@ -526,6 +526,28 @@ a.tosu {
     }
 }
 
+/* Tables on page layout */
+.post-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    th {
+        background: #f0f4f8;
+        font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+        background: #fafafa;
+    }
+}
+
 /* Materials page */
 .materials-links-grid {
     display: grid;

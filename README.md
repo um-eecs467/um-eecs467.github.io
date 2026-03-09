@@ -8,20 +8,22 @@ Live site: [um-eecs467.github.io](https://um-eecs467.github.io)
 
 ## Table of Contents
 
-1. [Directory Structure](#directory-structure)
-2. [Running Locally](#running-locally)
-3. [How to Update Course Content](#how-to-update-course-content)
-   - [Course Info & Semester Settings](#course-info--semester-settings)
-   - [Staff (Instructors & TAs)](#staff-instructors--tas)
-   - [Navigation](#navigation)
-   - [Home Page](#home-page)
-   - [Schedule](#schedule)
-   - [Lectures](#lectures)
-   - [Botlab (Assignments Docs)](#botlab-assignments-docs)
-   - [Design Project Page](#design-project-page)
-   - [Resources Page](#resources-page)
-4. [Adding a New Semester](#adding-a-new-semester)
-5. [Styling & Theming](#styling--theming)
+- [EECS 467 Course Website](#eecs-467-course-website)
+  - [Table of Contents](#table-of-contents)
+  - [Directory Structure](#directory-structure)
+  - [Running Locally](#running-locally)
+  - [How to Update Course Content](#how-to-update-course-content)
+    - [Course Info \& Semester Settings](#course-info--semester-settings)
+    - [Staff (Instructors \& TAs)](#staff-instructors--tas)
+    - [Navigation](#navigation)
+    - [Home Page](#home-page)
+    - [Schedule](#schedule)
+    - [Lectures](#lectures)
+    - [Botlab (Assignments Docs)](#botlab-assignments-docs)
+    - [Design Project Page](#design-project-page)
+    - [Resources Page](#resources-page)
+  - [Adding a New Semester](#adding-a-new-semester)
+  - [Styling \& Theming](#styling--theming)
 
 ---
 
@@ -141,8 +143,6 @@ course_description: "..."
 url: "https://um-eecs467.github.io/"
 ```
 
-Restart the local server after changing `_config.yml` (it is not hot-reloaded).
-
 ---
 
 ### Staff (Instructors & TAs)
@@ -156,7 +156,7 @@ instructors:
     webpage: https://xiaoxiaodu.net
     role: Instructor
     email: xiaodu@umich.edu
-    office: "3257 FMCRB"
+    office: "3257 FRB"
     office_hours: "By appointment"
 
 teaching_assistants:
@@ -164,7 +164,7 @@ teaching_assistants:
     profile_pic: /_images/pp/blank.svg      # use blank.svg if no photo
     email: rishadh@umich.edu
     role: Graduate Assistant
-    office_hours: "Mondays 3–5pm, BBB 3rd floor"
+    office_hours: "Mondays 3–5pm, FRB Atrium"
 ```
 
 To add a profile photo, place a `.webp` or `.jpg` file in `_images/pp/` and update the `profile_pic` path.
@@ -253,7 +253,7 @@ Edit **`w26/lectures.md`**. Update the YouTube playlist URL and PrairieLearn URL
 
 ### Botlab (Assignments Docs)
 
-All Botlab documentation lives under **`w26/assignments/`**. The content is kept in sync with the [rob550-docs](https://rob550-docs.github.io/docs/botlab/) source.
+All Botlab documentation lives under **`w26/assignments/`**. The content was copied from [rob550-docs](https://rob550-docs.github.io/docs/botlab/) on 2026-03-09 and does not sync.
 
 **To update a doc page:**
 1. Edit the corresponding file under `w26/assignments/` (e.g., `checkpoints/checkpoint1.md`).
