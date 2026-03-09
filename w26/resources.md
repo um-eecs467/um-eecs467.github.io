@@ -77,13 +77,32 @@ permalink: /w26/materials/
 
 ---
 
-## Resources
+## MBot Materials
+
+<div class="materials-books">
+  <div class="materials-book">
+    <a href="https://umich4087.autodesk360.com/shares/public/SH28cd1QT2badd0ea72bf8261c2ca649dd53" target="_blank"><span class="materials-book-title">MBot CAD File (Simplified Model)</span></a>
+    <span class="materials-book-meta">Autodesk Fusion 360 — open link to download</span>
+    <iframe src="https://umich4087.autodesk360.com/shares/public/SH28cd1QT2badd0ea72bf8261c2ca649dd53?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" style="display:block;margin-top:0.75em;"></iframe>
+  </div>
+  <div class="materials-book">
+    <a href="https://mbot.robotics.umich.edu"><span class="materials-book-title">UM MBot Website</span></a>
+    <span class="materials-book-meta">mbot.robotics.umich.edu</span>
+  </div>
+  <div class="materials-book">
+    <a href="/w26/assignments/how-to-guide/mbot-xl320-guide/"><span class="materials-book-title">XL320 Servo Control Library</span></a>
+    <span class="materials-book-meta">mbot_xl320_lib — assembly guide, library, and example code</span>
+  </div>
+</div>
+
+---
+
+## Useful Links
 
 <div class="materials-two-col">
   <div>
     <h3>Course Tools & Materials</h3>
     <ul>
-      <li><a href="https://mbot.robotics.umich.edu">UM MBot website</a></li>
       <li><a href="https://docs.ros.org/en/jazzy/index.html">ROS2 Documentation (Jazzy)</a></li>
       <li><a href="https://www.youtube.com/playlist?list=PLtT6bWPnaAa1ijES0Tp0hG0i7MtXggbJR">Building a 2DoF Arm prototype (YouTube)</a></li>
       <li><a href="https://genai.umich.edu/">UM Generative AI Resources</a></li>

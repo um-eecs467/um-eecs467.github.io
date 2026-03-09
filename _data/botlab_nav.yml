@@ -24,10 +24,7 @@ sections:
         url: /w26/assignments/checkpoints/checkpoint3/
       - title: "Checkpoint 4"
         url: /w26/assignments/checkpoints/checkpoint4/
-      - title: "Design Lab"
-        url: /w26/assignments/checkpoints/design-lab/
-      - title: "Competition"
-        url: /w26/assignments/checkpoints/competition/
+
 
   - title: "How-to Guide"
     url: /w26/assignments/how-to-guide/
