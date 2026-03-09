@@ -2,16 +2,38 @@ instructors:
   - name: Xiaoxiao Du
     profile_pic: /_images/pp/xiaoxiao.webp
     webpage: https://xiaoxiaodu.net
+    role: Instructor
+    email: xiaodu@umich.edu
+    office: "3257 FMCRB"
+    office_hours: "By appointment. Available during lecture/lab."
 
 teaching_assistants:
-  - name: Harry Potter
-    profile_pic: /_images/pp/potter.jpg
-    webpage: https://en.wikipedia.org/wiki/Harry_Potter_(character)
+  - name: Ashrith (Ash) Edukulla
+    profile_pic: /_images/pp/blank.svg
+    email: ashed@umich.edu
+    role: Instructional Assistant (IA)
+    office_hours: TBD
 
-  - name: Hermione Granger
-    profile_pic: /_images/pp/granger.jpg
-    webpage: https://en.wikipedia.org/wiki/Hermione_Granger
+  - name: Vaibhav Gurunathan
+    profile_pic: /_images/pp/blank.svg
+    email: sydbelt@umich.edu
+    role: Instructional Assistant (IA)
+    office_hours: TBD
 
-  - name: Ron Weasley
-    profile_pic: /_images/pp/weasley.jpg
-    webpage: https://en.wikipedia.org/wiki/Ron_Weasley
+  - name: Ruey Day
+    profile_pic: /_images/pp/blank.svg
+    email: rueyday@umich.edu
+    role: Instructional Assistant (IA)
+    office_hours: TBD
+
+  - name: Rishad Hasan
+    profile_pic: /_images/pp/blank.svg
+    email: rishadh@umich.edu
+    role: Graduate Assistant
+    office_hours: TBD
+
+  - name: Jason (Jay) Brown
+    profile_pic: /_images/pp/blank.svg
+    email: jaybrow@umich.edu
+    role: Graduate Assistant
+    office_hours: TBD

@@ -1,227 +1,362 @@
-# Features
-- Individual page for assignments, lectures, course material, course schedule
-- Auto generated Course schedule Page
-- Auto generated course updates section (for each new lectures and assignments) + custom/manual announcements 
-- Super lightweight 
-- Highly customizable
-- Ready to be used in Github Pages
-- Responsive Mobile View
-- Support for Google Analytics
+# EECS 467 Course Website
 
-# Change log
-- Version 2.0
-  - New Schedule page with more efficient use of space.
-  - Gregorian calendar is now the default one (English Calendar).
-  - Add customization options to home, assignments, lectures, and schedule pages.
-  - Add support for themes (so you can modify the website's look according to your school's brandings)!.
-  - Move navigation menus to YAML which means it is now easier to add new pages.
-  - Add more flexibility to lecture's links
+Jekyll-based course website for **EECS 467: Autonomous Robotics Design Experience** at the University of Michigan.
 
-# Demo
-Checkout for a working demo at [kazemnejad.github.io/jekyll-course-website-template/](https://kazemnejad.github.io/jekyll-course-website-template/). You may also want to see this real-world example at [iust-deep-learning.github.io/972](https://iust-deep-learning.github.io/972/) or [iust-courses.github.io/ai97/](https://iust-courses.github.io/ai97/) (Please note the last two examples are using the older version).
+Live site: [um-eecs467.github.io](https://um-eecs467.github.io)
 
-# Some Screenshots
-<p float="left">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_home.jpg" width="300">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_schedule.jpg" width="300">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_lecture.jpg" width="300">
-</p>
+---
 
-<p float="left">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_assign.jpg" width="300">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_sample_assign.jpg" width="300">
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/screen_material.jpg" width="300">
-</p>
+## Table of Contents
 
-# Acknowledgement 
-This template is heavily based on [svmiller / course-website](https://github.com/svmiller/course-website).
+- [EECS 467 Course Website](#eecs-467-course-website)
+  - [Table of Contents](#table-of-contents)
+  - [Directory Structure](#directory-structure)
+  - [Running Locally](#running-locally)
+  - [How to Update Course Content](#how-to-update-course-content)
+    - [Course Info \& Semester Settings](#course-info--semester-settings)
+    - [Staff (Instructors \& TAs)](#staff-instructors--tas)
+    - [Navigation](#navigation)
+    - [Home Page](#home-page)
+    - [Schedule](#schedule)
+    - [Lectures](#lectures)
+    - [Botlab (Assignments Docs)](#botlab-assignments-docs)
+    - [Design Project Page](#design-project-page)
+    - [Resources Page](#resources-page)
+  - [Adding a New Semester](#adding-a-new-semester)
+  - [Styling \& Theming](#styling--theming)
 
-# How to deploy your own website (on GitHub pages) 
-1. Fork this repository.
-2. Open `_config.yml`.
-   1. Update `url` field according to your GitHub account (e.g., `https://<your-github-username>.github.io/`).
-   2. Update `baseurl` field according to your reporsitory's name (e.g., `/cs101`).
-   3. Commit and push your changes.
-3. Go to your repository's settigns (`https://github.com/<your-github-username>/<your-repo-name>/settings`).
-4. On GitHub Pages section, choose source to be your master branch, and enable Github Pages.
-5. You are now ready to go! Start customizing your website.
+---
 
-Pro Tip: You don't need to clone your repo to update your website. Use GitHub web UI to update its source files, and GitHub will build and deploy your website automatically!
+## Directory Structure
 
-**Best Practice for managing repositories**: If you plan to use this template for university courses, and the course is offered for multiple semesters/quarters, I suggests you to create a GitHub account or an Organization for it. Then, create new repoository under that account/organization for each semester.
-- Example: 
-  - Course name: CS101
-  - Semester: Fall 2020
-  - School name: CMU
-- => account/org name: `cmu-cs101`
-- => repo name: `fa2020`
-- => website address will be: `https://cmu-cs101.github.io/fa2020/`
+```
+um-eecs467.github.io/
+│
+├── _config.yml               # Site-wide settings (course name, URL, semester)
+│
+├── _data/
+│   ├── nav.yml               # Left sidebar top-level navigation links
+│   ├── people.yml            # Instructor and TA info (name, email, office hours)
+│   ├── semesters.yml         # Semester dropdown selector data
+│   ├── previous_offering.yml # Links to previous semester sites
+│   └── botlab_nav.yml        # Sidebar sub-navigation for Botlab docs
+│
+├── _includes/
+│   ├── sidenav.html          # Left sidebar navigation (reads nav.yml + botlab_nav.yml)
+│   ├── head.html             # HTML <head> (meta, CSS links, favicon)
+│   └── footer.html           # Site footer
+│
+├── _layouts/
+│   ├── default.html          # Base layout: two-column flex (sidebar + main content)
+│   ├── home.html             # Home page layout (staff headshots, announcements)
+│   ├── docs.html             # Botlab docs layout (page header + content; sidebar via default)
+│   ├── lectures.html         # Lectures page layout
+│   ├── schedule.html         # Schedule page layout
+│   └── assignments.html      # Assignments index layout
+│
+├── _sass/
+│   ├── _user_vars.scss       # Color theme variables (primary/secondary colors)
+│   ├── _sidenav.scss         # Left sidebar layout and nav styles
+│   ├── _docs.scss            # Styles for Botlab docs callouts, copy button
+│   ├── _syntax-highlighting.scss  # Code block syntax highlighting (GitHub Light)
+│   ├── _base.scss            # Base typography and element styles
+│   ├── _header.scss          # Legacy header styles (unused in current layout)
+│   └── _layout.scss          # General layout styles
+│
+├── _css/
+│   └── main.scss             # Master CSS file — imports all partials above
+│
+├── _images/
+│   ├── favicon.png           # Site favicon (MBot logo)
+│   └── pp/                   # Staff profile pictures (webp/svg)
+│
+├── assets/
+│   ├── images/botlab/        # All images used in Botlab documentation
+│   └── pdfs/                 # PDF files (schematics, architecture diagrams)
+│
+├── index.md                  # Home page content
+├── lectures.md               # Lectures page content
+├── assignments.md            # Legacy assignments page (not primary)
+├── resources.md              # Legacy resources page (not primary)
+├── project.md                # Legacy project page (not primary)
+│
+├── w26/                      # Winter 2026 semester content (all under /w26/ URL)
+│   ├── schedule.md           # /w26/schedule/ — weekly course schedule + office hours calendar
+│   ├── lectures.md           # /w26/lectures/ — lecture links and resources
+│   ├── project.md            # /w26/project/ — design project requirements
+│   ├── resources.md          # /w26/resources/ — course resource links
+│   └── assignments/          # /w26/assignments/ — Botlab documentation
+│       ├── index.md          # Botlab overview page
+│       ├── get-started.md
+│       ├── mbot-hardware-setup-pi5.md
+│       ├── mbot-system-setup-pi5.md
+│       ├── mbot-hardware-design.md
+│       ├── mbot-software-library.md
+│       ├── checkpoints/
+│       │   ├── index.md
+│       │   ├── checkpoint0.md through checkpoint4.md
+│       │   ├── design-lab.md
+│       │   └── competition.md
+│       └── how-to-guide/
+│           ├── index.md
+│           ├── slam-toolbox-guide.md
+│           ├── mbot-xl320-guide.md
+│           └── misc.md
+│
+├── Gemfile                   # Ruby gem dependencies
+└── resources/                # Source material used to build the site (not served)
+    ├── website_requirements.txt
+    ├── course_info.md
+    ├── course_schedule.md
+    ├── relevant_links.txt
+    └── design_project_info.md
+```
 
-# How to test your website locally
-1. Install Jekyll ([Installation guide](https://jekyllrb.com/docs/installation/))
-2. Clone your repo
-3. Watch your website while editing: `bundle exec jekyll serve`
+---
 
-# How to customize
-## Changing the names
-- Open `_config.yml`
-- Update `course_name`, `course_semester`, and `course_description` (this will appear in the home page).
-- Update `schoolname`, `schoolurl`, `twitter_username`, and `address` accordingly.
-- (Optional) Enter your Google Analytics tracking ID in the `google_analytics` field (Remember to uncomment it).
-- Add more content to your home page: Update `index.md` (it supports Markdown!)
-- Update course staff info at `_data/people.yml` (You may need to upload the profile pics to `_images` folder.
-- (Optional) Open `_data/previous_offering.yml` and update the data if needed.
+## Running Locally
 
-## Change the looks
-- Open `_sass/_user_vars.scss`
-- Select your favorite from the pre-defined themes (comment all other themes, and uncomment your desired one)
-- Here are all themes:
-<img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/screenshots/themes.png">
+Requires Ruby 3.2+ (e.g., via Homebrew: `brew install ruby`).
 
-- You can also change the colors manually to match your branding
-## Contents
+```bash
+# From the repository root
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+gem install bundler
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+Site will be available at `http://localhost:4000`. Changes to files trigger an automatic rebuild.
+
+---
+
+## How to Update Course Content
+
+### Course Info & Semester Settings
+
+Edit **`_config.yml`**:
+
+```yaml
+course_name: "EECS 467: Autonomous Robotics Design Experience"
+course_semester: "Winter 2026"
+course_description: "..."
+url: "https://um-eecs467.github.io/"
+```
+
+---
+
+### Staff (Instructors & TAs)
+
+Edit **`_data/people.yml`**:
+
+```yaml
+instructors:
+  - name: Xiaoxiao Du
+    profile_pic: /_images/pp/xiaoxiao.webp  # place image in _images/pp/
+    webpage: https://xiaoxiaodu.net
+    role: Instructor
+    email: xiaodu@umich.edu
+    office: "3257 FRB"
+    office_hours: "By appointment"
+
+teaching_assistants:
+  - name: Rishad Hasan
+    profile_pic: /_images/pp/blank.svg      # use blank.svg if no photo
+    email: rishadh@umich.edu
+    role: Graduate Assistant
+    office_hours: "Mondays 3–5pm, FRB Atrium"
+```
+
+To add a profile photo, place a `.webp` or `.jpg` file in `_images/pp/` and update the `profile_pic` path.
+
+---
+
+### Navigation
+
+The site uses a **left sidebar navigation** (documentation-style layout). The sidebar is rendered by `_includes/sidenav.html` and styled by `_sass/_sidenav.scss`.
+
+Edit **`_data/nav.yml`** to change sidebar top-level links. All semester-specific pages use the `/w26/` prefix:
+
+```yaml
+items:
+  - url: /w26/schedule/
+    name: Schedule
+    icon_class: fas fa-calendar-alt
+  - url: /w26/assignments/
+    name: Botlab
+    icon_class: fas fa-tasks
+  - url: /w26/project/
+    name: Design Project
+    icon_class: fas fa-robot
+  - url: /w26/resources/
+    name: Resources
+    icon_class: fas fa-book
+```
+
+When the current page URL contains `/assignments/`, the sidebar automatically expands the **Botlab sub-navigation** (driven by `_data/botlab_nav.yml`).
+
+The semester switcher in the sidebar is driven by **`_data/semesters.yml`**:
+
+```yaml
+current: w26
+semesters:
+  - label: "W26"
+    key: w26
+    url: /w26/
+    name: "Winter 2026"
+```
+
+---
+
+### Home Page
+
+Edit **`index.md`** directly. It uses Markdown with HTML tables and supports standard Markdown formatting.
+
+Key sections to update each semester:
+- Lecture times and room (HTML table near the top)
+- Important links table (Piazza, GitLab, PrairieLearn, etc.)
+- Grading breakdown table
+- Course policies (collaboration, GenAI, lab equipment)
+
+---
+
+### Schedule
+
+Edit **`w26/schedule.md`**. The schedule is a hand-authored HTML table. Each row corresponds to one week.
+
+The page also embeds a **Google Calendar** showing office hours. The calendar defaults to weekly view. To update the calendar, replace the `src` URL in the `<iframe>` tag with the new calendar embed URL, keeping `&mode=WEEK` appended.
+
+**Row classes for color coding:**
+- `class="schedule-row-exam"` — light red highlight (competitions, midterms)
+- `class="schedule-row-project-due"` — light yellow highlight (checkpoint due dates)
+- `class="schedule-week-header"` — blue header row (week label)
+
+Example row:
+```html
+<tr class="schedule-row-project-due">
+  <td>Week 5<br><small>Feb 10</small></td>
+  <td>Lecture: SLAM</td>
+  <td>Lab: <a href="/w26/assignments/checkpoints/checkpoint2/">Checkpoint 2</a> due</td>
+  <td>Feb 14</td>
+</tr>
+```
+
+The "Checkpoints reference" link at the top points to `/w26/assignments/checkpoints/`.
+
+---
+
 ### Lectures
-To add a new lecture, create an empty file with `.md` postfix in `_lectures/` directory. fill it using below template:
+
+Edit **`w26/lectures.md`**. Update the YouTube playlist URL and PrairieLearn URL at the top of the file.
+
+---
+
+### Botlab (Assignments Docs)
+
+All Botlab documentation lives under **`w26/assignments/`**. The content was copied from [rob550-docs](https://rob550-docs.github.io/docs/botlab/) on 2026-03-09 and does not sync.
+
+**To update a doc page:**
+1. Edit the corresponding file under `w26/assignments/` (e.g., `checkpoints/checkpoint1.md`).
+2. Keep all internal links pointing to `/w26/assignments/...` (not `/docs/botlab/...`).
+3. Keep all image paths as `/assets/images/botlab/...` (local copies, not external URLs).
+
+**To add a new doc page:**
+1. Create a `.md` file under the appropriate subdirectory.
+2. Add the following front matter:
+   ```yaml
+   ---
+   layout: docs
+   title: Your Page Title
+   permalink: /w26/assignments/your-page/
+   last_modified_at: 2026-01-01
+   ---
+   ```
+3. Add an entry to **`_data/botlab_nav.yml`** so it appears in the sidebar:
+   ```yaml
+   - title: "Your Page Title"
+     url: /w26/assignments/your-page/
+   ```
+
+**Sidebar navigation order** is controlled entirely by the order of entries in `_data/botlab_nav.yml`. Edit that file to reorder, rename, or restructure the sidebar.
+
+**Callout blocks** (matching just-the-docs style) are applied via kramdown IAL syntax:
 ```markdown
----
-type: lecture
-date: 20xx-xx-xxTx:xx:xx+4:30 
-title: <Title of this lecture>
+This text will appear in a cyan "Required For the Report" box.
+{: .required_for_report }
 
-# optional
-# please use /static_files/notes directory to store notes
-thumbnail: /static_files/path/to/image.jpg
+This is a warning.
+{: .warning }
 
-# optional
-tldr: "What is AI? How does it impact our lives? The current state of the art."
-  
-# optional
-# set it to true if you dont want this lecture to appear in the updates section
-hide_from_announcments: false
+This is a note.
+{: .note }
 
-# optional
-links: 
-    - url: /static_files/presentations/lec.zip
-      name: notes
-    - url: /static_files/presentations/code.zip
-      name: codes
-    - url: https://google.com
-      name: slides
-    - url: https://example.com
-      name: other
----
-<!-- Other additional contents using markdown -->
-**Suggested Readings:**
-- [Readings 1](http://example.com)
-- [Readings 2](http://example.com)
+This is important.
+{: .important }
 ```
 
-### Assignments
-To add a new assignments, create an empty file with `.md` postfix in `_assignments/` directory. fill it using below template:
-```markdown
+**Images** used in Botlab docs are stored locally under `assets/images/botlab/`. If the rob550 source adds new images, copy them to the same relative path under `assets/` here.
+
 ---
-type: assignment
-date: 20xx-xx-xxTx:xx:xx+4:30
-title: <Assignment title (e.g. Assignment #1>
 
-# optional 
-pdf: /static_files/assignments/assign_01.pdf
+### Design Project Page
 
-# optional
-solutions: /static_files/assignments/assign_01_solutions.pdf
+Edit **`w26/project.md`**. Contains design project requirements: team formation, proposal, status update, and final presentation details. Update dates and requirements each semester.
 
-# optional
-attachment: /static_files/assignments/assign_01_attachment.zip
-
-# optional
-# set it to true if you don't want this assignment to appear in the announcements section
-hide_from_announcments: false
-
-due_event: 
-    type: due
-    date: 20xx-xx-xxTx:xx:xx+4:30
-    description: 'Assignment #1 due'
 ---
-<!-- Other additional contents using markdown -->
+
+### Resources Page
+
+Edit **`w26/resources.md`**. Contains a table of course resource links (Piazza, Google Drive, GitLab, PrairieLearn, etc.). Update URLs at the start of each semester.
+
+---
+
+## Adding a New Semester
+
+1. **Create a new semester directory**, e.g., `f26/` for Fall 2026.
+2. **Copy** the contents of `w26/` into `f26/` and update all `permalink` values in front matter from `/w26/...` to `/f26/...`.
+3. **Update `_data/nav.yml`** to point all links to `/f26/...`.
+4. **Update `_data/semesters.yml`** to add the new semester and set it as current:
+   ```yaml
+   current: f26
+   semesters:
+     - label: "F26"
+       key: f26
+       url: /f26/
+       name: "Fall 2026"
+     - label: "W26"
+       key: w26
+       url: /w26/
+       name: "Winter 2026"
+   ```
+5. **Update `_data/botlab_nav.yml`** — change all `/w26/assignments/...` URLs to `/f26/assignments/...`.
+6. **Update `_layouts/docs.html`** — change the `Botlab Docs` header link from `/w26/assignments/` to `/f26/assignments/`.
+7. **Update `index.md`** with new semester info (dates, staff, links).
+8. **Update `_data/people.yml`** with new staff.
+9. **Add the previous semester** to `_data/previous_offering.yml` for archival.
+
+---
+
+## Styling & Theming
+
+**Colors** are set in `_sass/_user_vars.scss`:
+```scss
+$primary-color:   #00274C;  // Michigan blue
+$clemson-purple:  #00274C;
+$clemson-orange:  #FFCB05;  // Michigan maize
 ```
 
-### Dues & Deadlines
-Use `_events/` directory to add new a deadline, use `type: due`. These events will apear at the schedule page.
-```markdown
----
-type: due
-date: 20xx-xx-xxTx:xx:xx+4:30
-description: <Description of deadline (e.g. 'Final report due')>
-
-# optional
-# set it to true if you don't want this event to appear in the announcements section
-hide_from_announcments: false
----
+**Fonts** use the system font stack — no external font imports. The font stack is defined in `_css/main.scss`:
+```scss
+$base-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$mono-font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 ```
 
-### Exams
-Use `_events/` directory to add new Exam alert, use `type: exam`. These events will apear at the schedule page.
-```markdown
----
-type: exam
-date: 20xx-xx-xxTx:xx:xx+4:30
-description: <Description of the exam (e.g. 'The midterm exam')>
+**Sidebar layout** is styled in `_sass/_sidenav.scss`. The sidebar width, colors, and hover styles are all defined there. The two-column layout (sidebar + content) is set up in `_layouts/default.html` using CSS flexbox.
 
-# optional
-# set it to true if you don't want to this event appear in the announcements section
-hide_from_announcments: false
----
-```
+**Tab titles** use the format `Page Title | EECS 467` (or just `EECS 467 — Winter 2026` for the home page), configured in `_includes/head.html`.
 
-### Custom Events
-Use `_events/` directory to add new custom events, use `type: raw_event`. These events will apear at the schedule page.
-```markdown
----
-type: raw_event
-name: <Event name>
-date: 20xx-xx-xxTx:xx:xx+4:30
-description: <Event description>
+**Favicon** is located at `_images/favicon.png` (MBot logo). It is linked in `_includes/head.html`.
 
-# optional
-# if you want to hide time in Schedule, set this to true
-hide_time: false
+**Code block syntax highlighting** uses a GitHub Light theme defined in `_sass/_syntax-highlighting.scss`. To change themes, replace the token color values in that file.
 
-# optional
-# set it to true if you don't want this event appear to in the announcements section
-hide_from_announcments: false
----
-<!-- you can create custom content using markdown. this section will be placed in "Course Materials (in schedule section)" -->
-## Hello
-this is a custom event with `code` 
-```
-
-
-### Updates/Announcements
-All contents here appear in at the home page
-Use `_announcements/` directory to create new Announcement
-```markdown
----
-date: 20xx-xx-xxTx:xx:xx+4:30
----
-<put a short announcement here, you can use all markdown features>
-```
-
-## Advanced Customization
-You can add custom contents to each section (lectures, assignments, schedule, materials, and project)
-- Lectures: Edit `lectures.md`
-- Assignments: Edit `assignments.md`
-- Schedule: Edit `schedule.md`
-- Materials: Edit `materials.md`
-- Project: Edit `project.md`
-
-Additionally, you can update navigation menus (the menu at the top of the website) by editing `_data/nav.yml`
-
-To add new section, add new navigation menu. Then create a new file in website's root directory using the following template:
-```markdown
----
-layout: page
-title: Page Title
-permalink: /page-address/
----
-```
-
+**Callout styles** (required_for_report, warning, note, important) are in `_sass/_docs.scss`. Each uses the SCSS `callout()` mixin — adjust colors or padding there.

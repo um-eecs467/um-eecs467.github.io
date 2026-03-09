@@ -6,4 +6,24 @@
         </a>
     </li>
     {% endfor %}
+
+    {% if site.data.semesters %}
+    <li class="semester-dropdown">
+        <a href="#" class="page-link semester-toggle">
+            <i class="fas fa-calendar"></i>
+            {% assign current_key = site.data.semesters.current %}
+            {% for sem in site.data.semesters.semesters %}
+              {% if sem.key == current_key %}{{ sem.label }}{% endif %}
+            {% endfor %}
+            <i class="fas fa-caret-down" style="font-size:0.8em; margin-left:3px;"></i>
+        </a>
+        <ul class="sub-menu semester-sub-menu">
+            {% for sem in site.data.semesters.semesters %}
+            <li>
+                <a href="{{ sem.url | prepend: site.baseurl }}">{{ sem.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endif %}
 </ul>

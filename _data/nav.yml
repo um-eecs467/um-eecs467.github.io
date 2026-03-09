@@ -3,22 +3,22 @@ items:
   name: Home
   icon_class: fa fa-home fa-lg
 
-- url: /schedule/
+- url: /w26/schedule/
   name: Schedule
   icon_class: fas fa-calendar-alt
 
-- url: /lectures/
+- url: /w26/lectures/
   name: Lectures
   icon_class: fas fa-book-reader
 
-- url: /assignments/
-  name: Assignments
-  icon_class: fas fa-user-graduate
+- url: /w26/assignments/
+  name: Botlab
+  icon_class: fas fa-tasks
 
-- url: /project/
-  name: Project
-  icon_class: fas fa-user-graduate
+- url: /w26/project/
+  name: Design Project
+  icon_class: fas fa-robot
 
-- url: /materials/
-  name: Materials
+- url: /w26/materials/
+  name: Resources
   icon_class: fas fa-book
