@@ -22,7 +22,7 @@ EECS 467, Winter 2026:  Course Plan
 | Week 8: Botlab / Escape Challenge |  |  |  |
 |   Tu Feb. 24   Th Feb. 26 F   Feb. 27 |  Work on [Checkpoint 3 submission](https://rob550-docs.github.io/docs/botlab/checkpoints/checkpoint2.html#checkpoint-submission) (end of page)  |  | \- Sign up for Design Lab  \- Start discussing Design Lab ideas |
 | Week 9: Spring Break |  |  |  |
-|   Tu Mar. 3  Th Mar. 5 F Mar. 6 | **NO CLASS NO CLASS NO CLASS** |  |  Checkpoint 3 (Escape challenge) report and video Due March 9, 2026    |
+|   Tu Mar. 3  Th Mar. 5 F Mar. 6 | **NO CLASS** |  |  Checkpoint 3 (Escape challenge) report and video Due March 9, 2026    |
 | Week 10: Botlab/Competition |  |  |  |
 | Tu Mar. 10  Th Mar. 12 F  Mar. 13  | [Checkpoint 4: camera calibration](https://rob550-docs.github.io/docs/botlab/checkpoints/checkpoint4.html) **(Midterm competition)** | HW 12 HW 13 | Checkpoint 4 (Camera Calibration) video Due   |
 | Week 11: Design Lab |  |  |  |

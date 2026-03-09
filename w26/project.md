@@ -72,6 +72,7 @@ Each team gives a ~10 minute status update presentation to the class. Submit to 
 ## Final Project Presentation
 
 **Oral presentation/demo DUE: April 27, 2026, 10:30 AM EST**
+
 **Written report and demo video DUE: April 27, 2026, 11:59 PM EST**
 
 ### Oral Presentation Requirements

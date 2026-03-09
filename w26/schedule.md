@@ -142,7 +142,7 @@ permalink: /w26/schedule/
     </tr>
     <tr class="schedule-row-project-due">
       <td>Tu Mar. 3<br>Th Mar. 5<br>F Mar. 6</td>
-      <td><strong>NO CLASS &nbsp;|&nbsp; NO CLASS &nbsp;|&nbsp; NO CLASS</strong></td>
+      <td><strong>NO CLASS</strong></td>
       <td></td>
       <td><strong>Checkpoint 3 (Escape Challenge) report and video Due March 9, 2026</strong></td>
     </tr>
