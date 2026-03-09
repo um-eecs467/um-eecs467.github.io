@@ -8,7 +8,10 @@ permalink: /w26/schedule/
 
 ## Office Hours Calendar
 
-<div style="margin: 1em 0 2em;">
+<div style="margin: 1em 0 0.5em;">
+  <a href="https://calendar.google.com/calendar/u/1?cid=Y19hOGY3ODA0MTEzZDU1OGE3ZGZiODE2OTc4NDBjM2M3NzA3ZjRiNWU4ZGNmNjFkNjRiMmI4NTNjOThmMTk4OTJlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" style="font-size:0.9em;">+ Add to calendar</a>
+</div>
+<div style="margin: 0.25em 0 2em;">
   <iframe src="https://calendar.google.com/calendar/embed?src=c_a8f7804113d558a7dfb81697840c3c7707f4b5e8dcf61d64b2b853c98f19892e%40group.calendar.google.com&ctz=America%2FNew_York&mode=WEEK" style="border: 0; width: 100%; display: block;" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
